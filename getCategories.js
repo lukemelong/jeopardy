@@ -91,8 +91,8 @@ function display(values){
     let col = 1;
     let numberOfQuestions = categoryTitles.length * values.length;
     let score = 0;
-    let questionsCorrect = 15;
-    let questionsWrong = 13;
+    let questionsCorrect = 0;
+    let questionsWrong = 0;
 
     categoryTitles.forEach((title) =>{
         
@@ -185,7 +185,7 @@ function display(values){
             // Reset the input
             document.getElementById("answerInput").value = "";
             // Adds to the players completed questions
-            if(questionsCorrect+ questionsWrong === numberOfQuestions){
+            if(questionsCorrect + questionsWrong === numberOfQuestions){
                 gameOver();
             }
         }
