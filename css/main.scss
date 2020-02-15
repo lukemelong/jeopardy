@@ -1,0 +1,103 @@
+@import "_fonts";
+
+/* Variables */
+$row-height: 160px;
+$grid-gap: 5px;
+
+/* Global */
+body{
+    margin: 10px;
+    background-color: black;
+    color: white;
+    font-family: "Swiss911";
+}
+
+/* Splash Page */
+#splash{
+    height: 300px;
+    text-align: center;
+    margin-top: 14em;
+    h1{
+        font-family: 'Jeopardy';
+        font-size: 800%;
+    }
+    h2{
+        padding: 10px;
+    }
+}
+
+/* Header */
+header{
+    height: 50px;
+    margin-top: 1.1em;
+    color: white;
+    font-size: 30px;
+    h2{
+        display: inline;
+        padding: 40px;
+    }
+}
+
+/* Questions Page */
+#questions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: $row-height $row-height $row-height $row-height $row-height $row-height;
+
+    grid-column-gap: $grid-gap;
+    grid-row-gap: $grid-gap;
+
+    text-align: center; 
+
+    h1, article{
+        border: solid 1px black;
+           
+        background-color: blue;
+    }
+    h1{
+        padding-top: 40px;
+        margin-bottom: 10px;
+        font-size: 50px;
+        text-shadow: 3px 3px black;
+    }
+    article{
+        box-sizing: border-box;
+        // margin: 5px;
+        padding-top: 20px;
+        font-size: 100px;
+        color: yellow;
+        text-shadow: 5px 5px black;
+    }
+}
+
+/* Answers */
+#answer{
+    
+    text-align: center;
+    padding-top: 50px;
+    h2{
+        font-size: 40px;
+        padding: 20px;
+    }
+}
+
+/* Game Over */
+#gameOver{
+    margin-top: 250px;
+    text-align: center;
+
+    h1{
+        font-family: 'Jeopardy';
+        font-size: 800%;
+    }
+    h2{
+        padding: 10px;
+    }
+    button{
+        margin: 10px;
+    }
+}
+/* Displays */
+#answer, #switchScreens, #questions, #gameOver, header{
+    display: none;
+}

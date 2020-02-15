@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Jeopardy";
+  src: url("../fonts/gyparody.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Swiss911";
+  src: url("../fonts/Swiss911.ttf") format("truetype");
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>Jeopardy!</title>
+</head>
+<body>
+    <div id="splash">
+        <h1>Jeopardy!</h1><h2>Please enter your name!</h1>
+        <input id="playerNameIn" type="text">
+        <button id="playJeopardy" type="button">Let's Play Jeopardy!</button>
+        <article id="splashError"></article>
+    </div>
+    <header>
+        <h2>Player: <span id="playerName"></span></h2>
+        <h2>Score: <span id="score">0</span></h2>
+    </header>
+    <div id="questions"></div>
+    <div id="answer">
+        <h2 id="answerText"></h2>
+        <input id="answerInput" type="text">
+        <input id="answer2Question" type="hidden">
+        <input id="answerValue" type="hidden">
+        <button id="answerButton" type="button">Answer</button>
+        <br><button id="switchScreens" type="button">Back To Questions</button>
+        <h2 id="errorText"></h2>
+    </div>
+    <div id="gameOver">
+        <h1>Game Over!</h1>
+        <h2>Your score was <span id="scoreOut"></span></h2>
+        <h2>You got <span id="correct"></span> correct and <span id="wrong"></span> wrong!</h2>
+        <button id="playAgain" type="button">Play Again?</button>
+    </div>
+    <script src="getCategories.js"></script>
+</body>
+</html>
